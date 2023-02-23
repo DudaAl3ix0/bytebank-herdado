@@ -1,3 +1,5 @@
+import Funcionarios.Gerente;
+
 public class TestaGerente {
     public static void main(String[] args) {
        Gerente matheus = new Gerente();

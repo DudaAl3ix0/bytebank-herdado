@@ -1,3 +1,5 @@
+import Funcionarios.Funcionario;
+
 public class TestaBonificacao{
     public static void main(String[] args) {
         Funcionario funcionario1 = new Funcionario();

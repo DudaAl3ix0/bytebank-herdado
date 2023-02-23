@@ -1,7 +1,9 @@
+package Funcionarios;
 public class Gerente extends Funcionario {
     private int senha;
 
     public double getBonificacao(){
+        System.out.println("Chamando o método de bonificação do gerente");
         return super.getBonificacao() + super.getSalario();
     } 
 
