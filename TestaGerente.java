@@ -7,5 +7,9 @@ public class TestaGerente {
 
         boolean autenticação = matheus.autenticação(14);
         System.out.println(autenticação);
+
+        matheus.setSalario(7000);
+        System.out.println(matheus.getBonificacao()); 
+
     }
 }
