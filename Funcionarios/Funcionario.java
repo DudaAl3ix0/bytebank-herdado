@@ -1,5 +1,6 @@
 package Funcionarios;
-public class Funcionario {
+//impede de instanciar, criar objetos dessa classe
+public abstract class Funcionario {
     private String nome;
     private String cpf;
     private double salario;
@@ -7,10 +8,8 @@ public class Funcionario {
     public Funcionario(){
         
     }
-
-    public double getBonificacao(){
-        return this.salario * 0.05;
-    }
+    //método sem corpo implementado (filhos possem implementações)
+    public abstract double getBonificacao();
 
     public String getNome(){
         return this.nome;
