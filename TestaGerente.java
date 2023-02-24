@@ -5,10 +5,9 @@ public class TestaGerente {
        Gerente matheus = new Gerente();
        matheus.setNome("Matheus Mucci");
        System.out.println(matheus.getNome()); 
-       matheus.setSenha(13);
+       matheus.autenticacao(1344);
 
-        boolean autenticação = matheus.autenticação(14);
-        System.out.println(autenticação);
+        System.out.println(matheus.autenticacao(1344));
 
         matheus.setSalario(7000);
         System.out.println(matheus.getBonificacao()); 
