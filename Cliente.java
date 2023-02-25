@@ -1,4 +1,6 @@
-package Funcionarios;
+
+
+import Funcionarios.Autenticavel;
 
 public class Cliente implements Autenticavel{
     private int senha;

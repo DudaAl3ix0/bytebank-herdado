@@ -1,9 +1,26 @@
 package Funcionarios;
-public class Gerente extends Autenticavel {
+//Gerenta herda os atributos de Funcionario e assina contrato / ou é com Autenticavel
+public class Gerente extends Funcionario implements Autenticavel {
+    private int senha;
+    
 
     public double getBonificacao(){
         System.out.println("Chamando o método de bonificação do gerente");
         return super.getSalario();
+    }
+
+    @Override
+    public void setSenha(int senha) {
+       this.senha = senha;
+    }
+
+    @Override
+    public boolean autenticacao(int senha) {
+        if(this.senha == senha){
+            return true;
+        }else{
+            return false;
+        }
     }
 
 }
