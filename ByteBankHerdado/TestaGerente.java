@@ -1,10 +1,8 @@
-import Funcionarios.Autenticavel;
-import Funcionarios.Gerente;
-
+package ByteBankHerdado;
 public class TestaGerente {
     public static void main(String[] args) {
-        Autenticavel gerente = new Cliente();
-        gerente.setSenha(2222);
+        Autenticavel c1 = new Cliente();
+        c1.setSenha(2222);
 
 
        Gerente matheus = new Gerente();
@@ -18,7 +16,7 @@ public class TestaGerente {
         System.out.println(matheus.getBonificacao()); 
 
         SistemaDeAutentificacao sa = new SistemaDeAutentificacao();
-        sa.autenticacao(gerente);
+        sa.autenticacao(c1);
 
     }
 }

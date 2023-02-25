@@ -1,6 +1,4 @@
-import Funcionarios.EditorVideo;
-import Funcionarios.Gerente;
-
+package ByteBankHerdado;
 public class TestaReferencia {
     public static void main(String[] args) {
       Gerente g1 = new Gerente();

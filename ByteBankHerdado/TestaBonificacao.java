@@ -1,6 +1,4 @@
-
-import Funcionarios.Gerente;
-
+package ByteBankHerdado;
 public class TestaBonificacao{
     public static void main(String[] args) {
         Gerente funcionario1 = new Gerente();

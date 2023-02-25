@@ -1,5 +1,4 @@
-import Funcionarios.Funcionario;
-
+package ByteBankHerdado;
 public class ControleBonificacao {
 
     private double somaDosRegistros;

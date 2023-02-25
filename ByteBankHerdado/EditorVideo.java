@@ -1,4 +1,4 @@
-package Funcionarios;
+package ByteBankHerdado;
 public class EditorVideo extends Funcionario {
     
 

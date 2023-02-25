@@ -1,4 +1,4 @@
-package Funcionarios;
+package ByteBankHerdado;
 //impede de instanciar, criar objetos dessa classe
 public abstract class Funcionario {
     private String nome;

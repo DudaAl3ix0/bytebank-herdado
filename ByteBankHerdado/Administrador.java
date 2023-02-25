@@ -1,11 +1,15 @@
-package Funcionarios;
+package ByteBankHerdado;
 
 public class Administrador extends Funcionario implements Autenticavel{
-    private int senha;
+    private AutenticadorSenha autentificador;
+
+    public Administrador(){
+        this.autentificador = new AutenticadorSenha();
+    }
 
     @Override
     public void setSenha(int senha) {
-        this.senha = senha;
+        this.autentificador.setSenha(senha);
         
     }
 
@@ -20,10 +24,6 @@ public class Administrador extends Funcionario implements Autenticavel{
 
     @Override
     public boolean autenticacao(int senha) {
-        if(this.senha == senha){
-            return true;
-        }else{
-            return false;
-        }
+       return this.autentificador.autenticacao(senha);
     }
 }

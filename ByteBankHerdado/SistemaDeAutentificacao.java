@@ -1,5 +1,4 @@
-import Funcionarios.Autenticavel;
-
+package ByteBankHerdado;
 public class SistemaDeAutentificacao {
     private int senha = 1344;
 

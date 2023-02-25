@@ -1,8 +1,11 @@
-package Funcionarios;
+package ByteBankHerdado;
 //Gerenta herda os atributos de Funcionario e assina contrato / ou é com Autenticavel
 public class Gerente extends Funcionario implements Autenticavel {
-    private int senha;
-    
+    private AutenticadorSenha autentificador;
+
+    public Gerente(){
+        this.autentificador = new AutenticadorSenha();
+    }
 
     public double getBonificacao(){
         System.out.println("Chamando o método de bonificação do gerente");
@@ -11,16 +14,12 @@ public class Gerente extends Funcionario implements Autenticavel {
 
     @Override
     public void setSenha(int senha) {
-       this.senha = senha;
+       this.autentificador.setSenha(senha);;
     }
 
     @Override
     public boolean autenticacao(int senha) {
-        if(this.senha == senha){
-            return true;
-        }else{
-            return false;
-        }
+        return this.autentificador.autenticacao(senha);
     }
 
 }
