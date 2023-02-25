@@ -1,4 +1,4 @@
-import Funcionarios.FuncionarioAutenticavel;
+import Funcionarios.Autenticavel;
 
 public class SistemaDeAutentificacao {
     private int senha = 1344;
@@ -7,7 +7,7 @@ public class SistemaDeAutentificacao {
         this.senha = senha;
     }
 
-    public void autenticacao(FuncionarioAutenticavel fa){
+    public void autenticacao(Autenticavel fa){
        boolean autenticou = fa.autenticacao(this.senha);
        if(autenticou == true){
             System.out.println("Bem-vindo ao sistema " + fa.getNome());
